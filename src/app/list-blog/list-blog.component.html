@@ -1,0 +1,20 @@
+<div class="container">
+    <p>Consulta de los Blog</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Url</th>
+                <th scope="col">Ver</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let blog of blogs">
+                <td>{{ blog.id }}</td>
+                <td>{{ blog.url }}</td>
+                <td><button class="btn btn-link" (click)="open()">ver</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
